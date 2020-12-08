@@ -24,23 +24,23 @@
 
 - type: replace
   path: /instance_groups/name=alertmanager/networks
-  value: ((network))
+  value: ((alertmanager_network))
 
 - type: replace
   path: /instance_groups/name=prometheus2/networks
-  value: ((network))
+  value: ((prometheus2_network))
 
 - type: replace
   path: /instance_groups/name=database/networks
-  value: ((network))
+  value: ((database_network))
 
 - type: replace
   path: /instance_groups/name=grafana/networks
-  value: ((network))
+  value: ((grafana_network))
 
 - type: replace
   path: /instance_groups/name=nginx/networks
-  value: ((network))
+  value: ((nginx_network))
 
 - type: replace
   path: /instance_groups/name=firehose/networks
