@@ -23,6 +23,10 @@
   value: ((vm_type_small))
 
 - type: replace
+  path: /instance_groups/name=nginx/vm_extensions
+  value: ((nginx_vm_extension))
+
+- type: replace
   path: /instance_groups/name=alertmanager/networks
   value: ((alertmanager_network))
 
